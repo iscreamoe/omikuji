@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(images/bg.png);
+  background-size: 1280px 250px;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+            トップページ
+============================= */
+.first-screen {
+  position: relative;
+}
+#logo {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+}
+#start-btn {
+  background-color: transparent;
+  position: absolute;
+  top: 550px;
+  left: 90px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 300ms;
+}
+#start-btn:hover {
+  opacity: 1;
+}
+#mary-top {
+  position: absolute;
+  top: 50px;
+  left: 650px;
+}
+.fuwafuwa {
+  animation:fuwafuwa 2s infinite ease-in-out alternate;
+}
+
+@keyframes fuwafuwa {
+  0% {transform:translate(-50%,0);}
+  50% {transform:translate(-50%,-10px);}
+  100% {transform:translate(-50%,0);}
+}
+
+/* =========================
+            おみくじ共通
+============================= */
+.result-screen {
+  position: relative;
+}
+.logo-omikuji {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+.charactor {
+  position: absolute;
+  left: 400px;
+}
+.omikuji {
+  position: absolute;
+  top: 120px;
+  left: 950px;
+  z-index: 2;
+}
+.textarea{
+  width: 1200px;
+  height: 248px;
+  color: #fff;
+  font-size: 48px;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 80px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 520px;
+  right: 48px;
+  z-index: 1;
+}
+.daikichi {
+  background: rgba(252, 73, 136, .8);
+}
+.chukichi {
+  background: rgba(21, 196, 193, 0.8);
+}
+.shokichi {
+  background: rgba(35, 205, 151, 0.8);
+}
+.taira {
+  background: rgba(252, 128, 73, .8);
+}
+.suekichi {
+  background: rgba(149, 73, 252, .8);
+}
+.daikyo {
+  background: rgba(73, 73, 252, .8);
+}
+.result-screen,
+.result{
+  display: none;
+}
+
+/* =========================
+            カーテン
+============================= */
+
+#slide{
+  width: 1280px;
+  height: 0;
+  background: rgba(252, 73, 136, .5);
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  transition: 500ms;
+}
+
+.open{
+  height: 800px !important;
+}
+
+.close{
+  top: 0 !important;
+  left: 0 !important;
+  height: 0 !important;
+}
+
+#loading{
+  width: 100%;
+  margin-top: 350px;
+  text-align: center;
+  color: #E8556A;
+  z-index: 5;
+  font-size: 72px;
+  font-family: "Nico Moji";
+}
+
+
+/*戻るボタン*/
+
+#btn-back{
+  position: absolute;
+  top: 600px;
+  right: 80px;
+  display: none;
+  font-size: 60px;
+  padding: 0.5rem 2rem;
+  border: 0;
+  background: #fff;
+  color: #333;
+  z-index: 100;
+}

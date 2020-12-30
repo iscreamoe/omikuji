@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたの今年の運勢は？開運おみくじ</title>
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="first-screen">
+        <img id="logo" class="fuwafuwa" src="images/logo-top.png">
+        <button id="start-btn"><img src="images/start-btn.png"></button>
+        <img id="mary-top" src="images/mary-top.png">
+    </div>
+
+    <div class="result-screen">
+      <div id="result-1" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-top.png">
+        <img class="omikuji" src="images/daikichi.png">
+        <p class="textarea daikichi">おめでとー！大吉だよー！<br>
+          2021年は絶好調間違いナシ！！！</p>
+      </div>
+      <div id="result-2" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-chukichi.png">
+        <img class="omikuji" src="images/chukichi.png">
+        <p class="textarea chukichi">中吉やったね！今日は何食べても<br>
+          ゼロカロリーになりそうな予感( ・∇・)</p>
+      </div>
+      <div id="result-3" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-shokichi.png">
+        <img class="omikuji" src="images/shokichi.png">
+        <p class="textarea shokichi">おやおや？小吉を引いたみたいだね！<br>
+          まっ、普通が一番平和だよねー！</p>
+      </div>
+      <div id="result-4" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-taira.png">
+        <img class="omikuji" src="images/taira.png">
+        <p class="textarea taira">レアおみくじ平を引いたキミはすごい！！<br>
+          平凡って事だけど逆にいい事あるカモ？</p>
+      </div>
+      <div id="result-5" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-suekichi.png">
+        <img class="omikuji" src="images/suekichi.png">
+        <p class="textarea suekichi">末吉かー・・・ビミョー(￣•ω•￣)<br>
+まあ、こっから運勢爆上げしてこ！</p>
+      </div>
+      <div id="result-6" class="result">
+        <img class="logo-omikuji" src="images/logo.png">
+        <img class="charactor" src="images/mary-daikyo.png">
+        <img class="omikuji" src="images/daikyo.png">
+        <p class="textarea daikyo">ガーン...大凶だよー（涙）<br>
+          でも、大凶でたら怖いもんナシだよね！
+      </div>
+      <button id="btn-back">戻る</button>
+    </div>
+    <div id="slide"></div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="omikuji.js"></script>
+</body>
+</html>
