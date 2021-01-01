@@ -75,7 +75,7 @@
   left: 950px;
   z-index: 2;
 }
-.textarea{
+.textarea {
   width: 1200px;
   height: 248px;
   color: #fff;
@@ -159,4 +159,72 @@
   background: #fff;
   color: #333;
   z-index: 100;
+}
+
+@media screen and (max-width:600px) {
+  #app {
+    width: 375px;
+    background-size: 375px auto;
+  }
+  #mary-top {
+    width: 375px;
+    height: 600px;
+    object-fit: cover;
+    top: 100px;
+    left: 0;
+  }
+  #logo {
+    width: 80%;
+    top: 50px;
+    left: 200px;
+    z-index: 3;
+  }
+  #start-btn {
+    left: 0;
+    z-index: 3;
+    opacity: 1;
+  }
+  #start-btn img {
+    width: 375px;
+  }
+  #loading {
+    font-size: 24px;
+  }
+
+
+  .logo-omikuji {
+    display: none;
+  }
+  .omikuji {
+    width: 50%;
+    top: 350px;
+    left: 90px;
+    z-index: 3;
+
+  }
+  .charactor {
+    width: 375px;
+    height: 600px;
+    object-fit: cover;
+    top: -60px;
+    left: 0;
+  }
+  .textarea {
+    width: 100%;
+    font-size: 20px;
+    top: 550px;
+    right: 0;
+    padding: 110px 0 20px 0; 
+    text-align: center;
+  }
+
+  #btn-back {
+    font-size: 16px;
+    top: 30px;
+    right: 30px;
+    background-color: rgb(21, 196, 193);
+    color: #fff;
+    border-radius: 5px;
+  }
+
 }
