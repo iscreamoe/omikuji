@@ -196,26 +196,29 @@
     display: none;
   }
   .omikuji {
-    width: 50%;
-    top: 350px;
-    left: 90px;
+    /* width: 50%; */
+    top: 100px;
+    left: 60px;
     z-index: 3;
 
   }
   .charactor {
-    width: 375px;
-    height: 600px;
+    width: 30%;
+    /* width: 375px;
+    height: 600px; */
     object-fit: cover;
-    top: -60px;
-    left: 0;
+    top: 550px;
+    left: 280px;
+    z-index: 10;
   }
   .textarea {
     width: 100%;
-    font-size: 20px;
-    top: 550px;
+    height: 200px;
+    font-size: 16px;
+    top: 450px;
     right: 0;
-    padding: 110px 0 20px 0; 
-    text-align: center;
+    padding: 100px 0 20px 20px; 
+    text-align: left;
   }
 
   #btn-back {
